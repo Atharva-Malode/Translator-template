@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Translator</title>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="/assets/mlsa.png" alt="Image" class="center-bottom-image">
+    </div>
+    <div class="container">
+        <h1>Translation service</h1>
+        <div>Enter the text you wish to translate, choose the language, and click Translate!</div>
+        <div>
+            <form method="POST">
+                <div class="form-group">
+                    <textarea name="text" cols="70" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="language">Select Language:</label>
+                    <select name="language" class="form-control">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ru">Russian</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+                <div class="translate">
+                    <button type="submit" class="btn btn-success">Translate!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
